@@ -576,7 +576,7 @@ meteor npm install --global chimp
 
 > Note that you can also install Chimp as a `devDependency` in your `package.json` but you may run into problems deploying your application as it includes binary dependencies. You can avoid such problems by running `meteor npm prune` to remove non-production dependencies before deploying.
 
-Chimp has a variety of options for setting it up, but we can add some npm scripts which will run the currently tests we define in Chimp's two main modes. We can add them to our `package.json`:
+Chimp has a variety of options for setting it up. In `package.json` for our convinience we can define some npm scripts which will start Chimp. When you run Chimp with `--watch` option, Chimp watches your running app (at `http://localhost:3000`) and rerun tests every time you make changes to your code.
 
 ```json
 {
